@@ -56,7 +56,7 @@ const Contact = () => {
                             </svg> 
                         </div>
                         <h2 className="text-3xl font-bold tracking-tight text-white">Get in touch</h2>
-                        <p className="mt-5 text-lg text-brand-gray">We leverage the forefront of technological advancements to craft cutting-edge digital solutions tailored to meet the intricate demands of modern businesses.</p> 
+                        <p className="mt-5 text-lg text-brand-gray">We use the latest technology to create advanced digital solutions that meet the complex needs of modern businesses.</p> 
                         <div>
                             <ul className="space-y-6 mt-10">
                                 <li className="cursor-pointer flex gap-4 text-left text-brand-gray text-lg hover:text-brand-orange transition-all delay-all ease-in-out">

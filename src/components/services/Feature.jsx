@@ -21,13 +21,13 @@ const Feature = () => {
   }, []);
 
   return (
-    <div className='grid grid-cols-1 sm:grid-cols-2 gap-4 px-8 md:px-20 lg:px-52 mt-10 md:mt-20 2xl:max-w-[100rem] mx-auto'>
-      <div className='col-span-1 sm:col-span-1'>
-        <img src={FeatureSvg} className='mx-auto md:ml-0 w-8/12 md:w-10/12' alt="Feature" />
+    <div className='grid grid-cols-1 md:grid-cols-5 xl:grid-cols-2 gap-4 px-8 md:px-10 xl:px-52 mt-10 md:mt-20 2xl:max-w-[100rem] mx-auto'>
+      <div className='col-span-1 md:col-span-2 xl:col-span-1'>
+        <img src={FeatureSvg} className='mx-auto md:ml-0 w-7/12 md:w-11/12 xl:w-10/12' alt="Feature" />
       </div>
-      <div className='col-span-1 sm:col-span-1 text-center sm:text-left'>
-        <h1 className="mt-6 md:mt-32 text-xl md:text-3xl text-white font-semibold leading-tight">We're here to guide and help you at all times</h1>
-        <p className="mt-3 md:mt-5 text-lg md:text-lg text-brand-gray">Building applications that are not just effective, but transformative. Our solutions go beyond functionality, harnessing innovation to redefine what’s possible. By merging cutting-edge technology with a deep understanding of your unique challenges, we create software that drives meaningful change and propels your business forward.</p>
+      <div className='col-span-1 md:col-span-3 xl:col-span-1 text-center md:text-left'>
+        <h1 className="mt-6 md:mt-16 lg:mt-20 2xl:mt-32 text-2xl md:text-xl lg:text-3xl text-white font-semibold leading-tight">We're here to guide and help <br className='hidden 2xl:block'/>you at all times</h1>
+        <p className="mt-3 md:mt-5 text-base lg:text-lg text-brand-gray">We focus on developing apps that are not only effective but also impactful. Our approach involves using the latest technologies and tools to ensure your app is fast, efficient, and meets high standards of performance and security. With our skilled designers, we ensure your app is visually appealing, enhancing user engagement and satisfaction. Our apps bring about significant changes that help your business grow and innovate.</p>
       </div>
     </div>
   );

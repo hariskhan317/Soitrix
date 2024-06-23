@@ -24,12 +24,12 @@ export const services = [
     {
         "icon": Design,
         "title": "UI/UX Design",
-        "description": "Crafting intuitive user interfaces and optimizing user experiences through wireframing, prototyping, and usability testing."
+        "description": "Creating user-friendly interfaces and enhancing user experiences by designing wireframes, prototypes, and conducting usability tests."
     },
     {
         "icon": Maintenance,
         "title": "Web Maintenance",
-        "description": "Providing ongoing updates, security patches, and technical support to keep websites running smoothly and securely."
+        "description": "We offer continuous updates, security fixes, and technical support to ensure websites run smoothly and securely over time."
     },
     {
         "icon": Magnifying,
