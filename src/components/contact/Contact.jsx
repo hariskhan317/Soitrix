@@ -68,8 +68,8 @@ const Contact = () => {
                                 </li>
                                 <li className="cursor-pointer flex gap-4 text-left text-brand-gray text-lg hover:text-brand-orange transition-all delay-all ease-in-out">
                                     <LuMail className="mt-0.5 text-2xl"  />
-                                    <a className="" href="mailto:hello@example.com">
-                                    hello@example.com
+                                    <a className="" href="mailto:support@soitrix.com">
+                                    support@soitrix.com
                                     </a>
                                 </li>
                             </ul>
