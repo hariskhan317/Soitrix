@@ -11,7 +11,8 @@ export default {
         'brand-black-100': '#18181C',
         'brand-black-200': '#222228',
         'brand-orange': '#CC5551',
-        'brand-gray': '#9E9E9E'
+        'brand-gray': '#9E9E9E',
+        'brand-gray-100': '#828282',
     },
       fontFamily: {
         'poppins': ['Poppins', 'sans-serif'],   

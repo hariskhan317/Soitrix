@@ -66,12 +66,12 @@ const Header = () => {
 
     return (    
         <header>
-            <div className='fixed w-full bg-brand-black z-50 pr-12 shadow-xl'> 
+            <div className='fixed w-full bg-brand-black-100 z-50 pr-12 shadow-xl'> 
                 <div className='flex justify-between'>
                     <div>
-                        <img src={logo} className='pt-1' alt="" />
+                        <img src={logo} className='py-5 w-full h-full' alt="" />
                     </div>
-                    <ul className='hidden md:flex gap-14 pt-6 '>
+                    <ul className='hidden md:flex gap-14 pt-7 '>
                         <li className='cursor-pointer text-white font-medium text-lg' onClick={() => handleScroll('home')}>Home</li> 
                         <li className='cursor-pointer text-white font-medium text-lg' onClick={() => handleScroll('services')}>Services</li>
                         <li className='cursor-pointer text-white font-medium text-lg' onClick={() => handleScroll('testimonials')}>Testimonials</li>
