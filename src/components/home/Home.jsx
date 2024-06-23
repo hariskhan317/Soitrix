@@ -19,8 +19,8 @@ const Home = () => {
         </div>
         <div className="relative text-center md:text-left pt-40 md:pb-56 px-8 md:px-20 lg:px-52 z-50">
           <img src={skills} className='block md:hidden mx-auto ' alt="" />  
-          <h1 className="mt-10 text-2xl sm:text-3xl md:text-5xl text-white font-semibold leading-tight ">Transforming  <span className="text-brand-orange">Ideas</span> into Seamless <br className='hidden md:block' /> Digital Experiences</h1>
-          <p className="mt-10 text-base sm:text-lg md:text-2xl text-brand-gray">Founded in 2023, Soitrix is a top web development agency that creates outstanding digital experiences. Our team of skilled developers, designers, and planners works together smoothly to make great ideas happen. We are dedicated to doing excellent work, carefully customizing each project to meet the highest standards of quality and creativity.</p>
+          <h1 className="mt-10 text-2xl sm:text-3xl md:text-5xl text-white font-semibold leading-tight ">Transforming  <span className="text-brand-orange">IDEAS</span> into seamless <br className='hidden md:block' /> digital experiences</h1>
+          <p className="mt-10 text-base sm:text-lg md:text-2xl text-brand-gray">Founded in 2023, Soitrix is a top web development agency that creates outstanding digital experiences. Our team of skilled developers, designers, and planners works together smoothly to make great ideas happen. We are dedicated to delivering excellent work, carefully customizing each project to meet the highest standards of quality and creativity.</p>
           <div className='flex justify-center md:justify-start mt-16'>
             <button onClick={() => handleScroll('contact')} className='bg-brand-black-100 py-2.5 px-3.5 w-auto flex justify-center gap-10 border-[2px] border-brand-gray rounded-xl'>
               <span className='text-white text-2xl mt-2'>Get a Quote</span>

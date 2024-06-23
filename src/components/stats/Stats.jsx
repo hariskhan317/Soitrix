@@ -33,9 +33,9 @@ const Stats = () => {
                 </div> */}
                 <div>
                     <h1 className="text-center text-6xl">
-                        <Counter start='0' end='5'/>
+                        <Counter start='0' end='21'/>
                     </h1>
-                    <p className="mt-3 text-brand-gray text-2xl font-medium text-center">Countries Served</p>
+                    <p className="mt-3 text-brand-gray text-2xl font-medium text-center">Technologies Utilized</p>
                 </div>
             </div>
         </section> 

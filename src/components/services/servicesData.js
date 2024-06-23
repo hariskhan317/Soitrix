@@ -9,7 +9,7 @@ export const services = [
     {
         "icon": CodeIcon,
         "title": "Web Development",
-        "description": "Tailored web solutions designed from scratch to meet specific business goals and user needs."
+        "description": "Tailored web solutions designed from scratch to meet specific business goals and user needs"
     },
     {
         "icon": MobileIcon,
@@ -34,6 +34,6 @@ export const services = [
     {
         "icon": Magnifying,
         "title": "Search Engine Optimization",
-        "description": "Optimizing websites to improve visibility in search engines, driving organic traffic and enhancing online presence."
+        "description": "Optimizing websites to improve visibility in search engines, driving organic traffic, and enhancing online presence."
     }
 ];
