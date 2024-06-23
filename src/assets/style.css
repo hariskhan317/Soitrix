@@ -6,3 +6,6 @@
 .swiper-pagination-bullet-active {
     background-color: #CC5551; /* Active bullet color */
 }
+.active {
+    color: #CC5551 !important; 
+}
