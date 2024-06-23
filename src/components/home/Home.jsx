@@ -24,7 +24,7 @@ const Home = () => {
           <div className='flex justify-center mt-16'>
             <button onClick={() => handleScroll('contact')} className='bg-brand-gray-100 py-1.5 px-2.5 w-auto flex justify-center gap-10 border-[2px] border-gray-50 rounded-xl'>
               <span className='text-white text-2xl mt-3'>Get a Quote</span>
-              <div className='bg-gray-100 rounded-lg h-14 w-16 flex justify-center'>
+              <div className='bg-gray-100 rounded-xl h-14 w-16 flex justify-center'>
                 <img src={arrow} className='mt-3 h-8 w-7' alt="" />
               </div>
             </button>  
