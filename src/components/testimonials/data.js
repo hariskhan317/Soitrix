@@ -1,15 +1,9 @@
-
+import Ricardo from '../../assets/ricardo.jpeg'
 export const testimonials = [
     {
-        "image": 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-        "name": "Judith Black",
-        "subtitle": "CEO of Workcation",
-        "description": `“Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo expedita voluptas culpa sapiente alias molestiae. Numquam corrupti in laborum sed rerum et corporis.”`
-    }, 
-    {
-        "image": 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-        "name": "Judith Black",
-        "subtitle": "CEO of Workcation",
-        "description": `“Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo expedita voluptas culpa sapiente alias molestiae. Numquam corrupti in laborum sed rerum et corporis.”`
-    }, 
+        "image": Ricardo,
+        "name": "Ricardo Gaynor",
+        "subtitle": "Senior Developer Analyst",
+        "description": `"I've had the pleasure of working with Haris G. for the past year and a half as a part-time full-stack application developer. Haris consistently delivers top-quality work and has been instrumental in building out our frontend applications. His attention to detail and dedication to producing high-quality code is evident in every project he undertakes. Haris is always on-time, reliable, and his professionalism is truly commendable. I highly recommend Haris for any development project; he is a valuable asset to any team"`
+    },  
 ];
