@@ -2,41 +2,54 @@ import { useState } from 'react';
 import emailjs from '@emailjs/browser';
 import { FaBuilding } from "react-icons/fa6";
 import { LuMail } from "react-icons/lu";
-import { toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+// import { toast } from 'react-toastify';
+// import 'react-toastify/dist/ReactToastify.css'; 
+import toast from 'react-hot-toast';
+// import axios from 'axios';
 
 const Contact = () => {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
-    const [phone, setPhone] = useState('');
+    // const [phone, setPhone] = useState('');
     const [message, setMessage] = useState('');
 
+ 
     const handleSubmit = (e) => {
 
         e.preventDefault();
-        console.log(name, email, phone, message)
+        console.log(name, email, message)
 
         const templateParams = {
             from_name: name,
             reply_to: email,
-            phone: phone,
+            // phone: phone,
             message: message,
         };
+        if (!name) {
+            return toast.error('Please enter your Name');
+        }
+        if (!email) {
+            return toast.error('Please enter Your Email');
+        }
+        if (!message) {
+            return toast.error('Please enter a message before submitting.');
+        }
 
         // Replace with your EmailJS service ID and template ID
-        emailjs.send('service_hf0vot8', 'template_au5nwet', templateParams, 'IJvEmlbmRvFKVA-eW')
-        .then((response) => {
-            console.log('Email sent:', response.status, response.text); 
-            setName('');
-            setEmail('');
-            setPhone('');
-            setMessage('');
-            return toast.success('Message sent successfully!');
+        emailjs.send('service_u69nppr', 'template_u9jk2go', templateParams, 'IJvEmlbmRvFKVA-eW')
+        .then((response) => { 
+            if (response.status === 200) {
+                toast.success('Message sent successfully!');
+            }              
         }, (error) => {
             console.error('Error sending email:', error); 
-            return toast.error('Failed to send message. Please try again later.');
+            toast.error('Failed to send message. Please try again later.');
         });
+        setName('');
+        setEmail(''); 
+        setMessage('');
     }
+
     return (
         <div id="contact" className="relative isolate bg-brand-black 2xl:max-w-[100rem] mx-auto">
             <div className="mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2">
@@ -76,7 +89,7 @@ const Contact = () => {
                         </div>
                     </div>
                 </div>
-                <form onSubmit={handleSubmit} className="px-6 lg:pb-24 lg:pt-20 lg:px-8 lg:py-48">
+                <form onSubmit={handleSubmit} className="px-6 lg:pb-24 lg:pt-32 lg:px-8 lg:py-48">
                     <div className="mx-auto max-w-xl lg:mr-0 lg:max-w-lg">
                         <div className="grid grid-cols-1 gap-y-6">
                             {/* name */}
@@ -110,7 +123,7 @@ const Contact = () => {
                                 </div>
                             </div>
                             {/* phone */}
-                            <div className="sm:col-span-2">
+                            {/* <div className="sm:col-span-2">
                                 <label htmlFor="phone-number" className="block text-sm font-semibold leading-6 text-white">
                                     Phone number
                                 </label>
@@ -124,7 +137,7 @@ const Contact = () => {
                                         className="block w-full rounded-md border-0 bg-white/5 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-orange-500 sm:text-sm sm:leading-6"
                                     />
                                 </div>
-                            </div>
+                            </div> */}
                             {/* message */}
                             <div className="sm:col-span-2">
                                 <label htmlFor="message" className="block text-sm font-semibold leading-6 text-white">
